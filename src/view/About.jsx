@@ -44,7 +44,7 @@ const About = () => {
                   transition={{ duration: 1, delay: 0.3 }}
                   className=""
                 >
-                  <p className="font-alien sm:text-2xl text-[12px]">
+                  <p className="normal font-alien sm:text-2xl text-[12px]">
                     Choose wisely, for the Black Panther commands respect and
                     loyalty. Embrace the crypto-powered Black Panther, Batman's
                     elusive ally, and unlock endless potential. Disregard it,
