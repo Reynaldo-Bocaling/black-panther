@@ -6,15 +6,15 @@ import pancakeswap from "/img/socials/pancakeswap.png";
 export const navlinks = [
   {
     label: "Tokenomics",
-    url: "",
+    url: "#tokenomics",
   },
   {
     label: "About",
-    url: "",
+    url: "#about",
   },
   {
     label: "Home",
-    url: "",
+    url: "#",
   },
 ];
 

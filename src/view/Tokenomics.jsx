@@ -63,17 +63,17 @@ const Tokenomics = () => {
               >
                 <div className="flex max-w-[1600px] flex-col items-start md:flex-row">
                   <div className="relative w-full ">
-                    <h1 className="mt-20 text-4xl font-bold opacity-50 md:text-5xl">
+                    <h1 className="title mt-20 text-4xl font-bold opacity-50 md:text-5xl">
                       Token Details
                     </h1>
                     <ul className="mt-5 flex flex-wrap gap-x-7 gap-y-5 lg:gap-x-0 lg:text-left text-center justify-start">
                       {tokenomics.map((item, index) => (
                         <li key={index} className="flex ">
                           <div className="">
-                            <h2 className="text-3xl font-bold lg:text-2xl">
+                            <h2 className="title text-3xl font-bold lg:text-2xl">
                               {item.value}
                             </h2>
-                            <h4 className="max-w-[6.5rem] text-base opacity-50">
+                            <h4 className="title max-w-[6.5rem] text-base opacity-50">
                               {item.label}
                             </h4>
                           </div>
