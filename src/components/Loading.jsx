@@ -23,7 +23,7 @@ const Loading = () => {
         autoPlay
         preload="yes"
         ref={videoRef}
-        className="fixed z-[-1] left-0 top-14 h-screen w-full object-cover pointer-events-none  opacity-[0.3ss5]"
+        className="fixed z-[-1] left-0 top-14 h-screen w-full object-cover pointer-events-none  opacity-[0.5]"
       >
         <source
           src={isMobile ? mobileLoader : desktopLoader}
