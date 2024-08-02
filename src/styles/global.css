@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Indie+Flower&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.normal {
+    font-family: "Indie Flower", cursive;
+}
+
+.title,
+.links {
+    font-family: "Aboreto", system-ui;
+}
+
+body {
+    background: #000;
+}
+
+.slidingText::before {
+
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -250px;
+    transform: translateY(-50%);
+    width: 700px;
+    height: 200px;
+    border-radius: 20%;
+    background: radial-gradient(ellipse at center, hsla(0, 0%, 10%, 0.9),
+            transparent 64%);
+    z-index: 2;
+
+}
+
+.slidingText::after {
+
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -250px;
+    transform: translateY(-50%);
+    width: 700px;
+    height: 200px;
+    border-radius: 20%;
+    background: radial-gradient(ellipse at center, hsla(0, 0%, 10%, 0.9),
+            transparent 64%);
+    z-index: 2;
+
+}
+
+
+.blink {
+    font-size: 24px;
+    font-weight: bold;
+    color: #898989;
+    animation: blink-animation 2s infinite;
+}
+
+@keyframes blink-animation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    75% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.shake-button {
+    animation: shake 2.5s ease-in-out infinite;
+}
+
+
+
+@media (max-width:767px) {
+    .slidingText::before {
+
+        opacity: 0;
+
+    }
+
+    .slidingText::after {
+
+        opacity: 0;
+
+    }
+}
