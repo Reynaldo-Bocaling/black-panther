@@ -45,7 +45,6 @@ const Main = ({ isLoading }) => (
         <Hero />
         <About />
         <Tokenomics />
-        <Contact />
         <Footer />
       </div>
     )}
